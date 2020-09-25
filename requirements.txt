@@ -1,5 +1,5 @@
 certifi==2020.6.20
-chardet==0.0.4
+chardet==3.0.4
 convertdate==2.2.2
 future==0.18.2
 holidays==0.10.3
@@ -8,7 +8,6 @@ korean-lunar-calendar==0.2.1
 lxml==4.5.2
 numpy==1.19.2
 pandas==1.1.2
-pkg-resources==0.0.0
 PyMeeus==0.3.7
 python-dateutil==2.8.1
 pytz==2020.1

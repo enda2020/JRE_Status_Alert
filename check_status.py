@@ -2,7 +2,6 @@ import requests
 import pandas as pd
 import holidays
 import datetime
-import enda_util as e
 
 url = 'https://traininfo.jreast.co.jp/train_info/e/kanto.aspx'
 train_line = 'Keihin-Tōhoku Line'
@@ -50,9 +49,8 @@ def isworkday(date):
 status = get_status(train_line)
 
 if isworkday(today) and len(status) > 0 :
-  #print(get_status('Keihin-Tōhoku Line'))
-  #print(str(status['status']) + '\n\n' + url)
   
-  # send via line message. This can be replace with email etc.
-  e.send_line(str(status['status']) + '\n\n' + url)
+  print(str(status['status']) + '\n\n' + url)
+  
+  #Do something here, add email alert with  str(status['status']) + '\n\n' + url in the body
 
